@@ -5,6 +5,10 @@ import HomeNav from "./HomeNav";
 
 class Layout extends React.Component {
 
+  sendWhichProps(props) {
+    
+  }
+
   render() {
     return (
       <div className='app'>
