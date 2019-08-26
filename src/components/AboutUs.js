@@ -1,15 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
-class MeetupList extends React.Component {
+class AboutUs extends React.Component {
 
   render() {
     return (
-      <div className="meetup-list">
-        <Link to="/"><h1>I am a MeetupList</h1></Link>
+      <div className="about-us">
+        <h1>I am About Us</h1>
       </div>
     )
   }
 }
 
-export default MeetupList
+export default AboutUs
