@@ -1,12 +1,12 @@
 import React from "react"
 // import Layout from "../components/layout"
-import MeetupList from "../components/MeetupList"
+import MeetupCard from "../components/MeetupCard"
 
 
 const meetupList = () => (
-  <MeetupList>
-   
-  </MeetupList>
+  <MeetupCard>
+   {/* this will map meetup cards and list them */}
+  </MeetupCard>
 )
 
 export default meetupList
