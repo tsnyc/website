@@ -6,7 +6,9 @@ class MeetupCard extends React.Component {
   render() {
     return (
       <div className="meetup-card">
-        <Link to="/"><h1>I am a MeetupCard</h1></Link>
+        <Link to="/meetup1"><h1>I am MeetupCard to meetup1</h1></Link>
+        <Link to="/meetup2"><h1>I am MeetupCard to meetup2</h1></Link>
+        <Link to="/meetup3"><h1>I am MeetupCard to meetup3</h1></Link>
       </div>
     )
   }

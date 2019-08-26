@@ -6,7 +6,7 @@ class MeetupLanding extends React.Component {
   render() {
     return (
       <div className="meetup-landing">
-        <Link to="/"><h1>I am a MeetupLanding</h1></Link>
+        <h1>I am a MeetupLanding</h1>
       </div>
     )
   }
