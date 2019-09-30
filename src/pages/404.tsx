@@ -1,12 +1,7 @@
-import React from "react"
-// import Layout from "../components/layout"
-import NotFound from "../components/NotFound"
+import NotFound from "../components/NotFound";
+// import Layout from "../components/layout";
+import React from "react";
 
+const notFoundPage = () => <NotFound></NotFound>;
 
-const notFoundPage = () => (
-  <NotFound>
-   
-  </NotFound>
-)
-
-export default notFoundPage
+export default notFoundPage;

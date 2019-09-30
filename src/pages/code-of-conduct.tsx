@@ -1,12 +1,7 @@
-import React from "react"
-// import Layout from "../components/layout"
-import CodeConduct from "../components/CodeConduct"
+import CodeConduct from "../components/CodeConduct";
+// import Layout from "../components/layout";
+import React from "react";
 
+const codeConductPage = () => <CodeConduct></CodeConduct>;
 
-const codeConductPage = () => (
-  <CodeConduct>
-   
-  </CodeConduct>
-)
-
-export default codeConductPage
+export default codeConductPage;

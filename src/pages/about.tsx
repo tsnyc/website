@@ -1,12 +1,7 @@
-import React from "react"
-// import Layout from "../components/layout"
-import AboutUs from "../components/AboutUs"
+import AboutUs from "../components/AboutUs";
+// import Layout from "../components/layout";
+import React from "react";
 
+const aboutUsPage = () => <AboutUs></AboutUs>;
 
-const aboutUsPage = () => (
-  <AboutUs>
-   
-  </AboutUs>
-)
-
-export default aboutUsPage
+export default aboutUsPage;

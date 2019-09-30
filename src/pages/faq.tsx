@@ -1,12 +1,7 @@
-import React from "react"
-// import Layout from "../components/layout"
-import FaqAccordion from "../components/FaqAccordion"
+import FaqAccordion from "../components/FaqAccordion";
+// import Layout from "../components/layout";
+import React from "react";
 
+const faqPage = () => <FaqAccordion></FaqAccordion>;
 
-const faqPage = () => (
-  <FaqAccordion>
-   
-  </FaqAccordion>
-)
-
-export default faqPage
+export default faqPage;
