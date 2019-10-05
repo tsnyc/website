@@ -3,11 +3,11 @@ import FaqAccordion from "./FaqAccordion";
 // import { Link } from "gatsby"
 
 
-const Faq = () => (
-  <div className="faq">
-    <FaqAccordion>
-    </FaqAccordion>
-  </div>
-)
-
-export default Faq
+export default function Faq() {
+  return (
+    <div className="faq">
+      <FaqAccordion>
+      </FaqAccordion>
+    </div>
+  )
+}

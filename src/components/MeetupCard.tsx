@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 
 
-const Footer = () => (
+const MeetupCard = () => (
   <div className="meetup-card">
     <Link to="/meetup1">
       <h1>I am MeetupCard to meetup1</h1>
