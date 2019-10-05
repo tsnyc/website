@@ -5,9 +5,9 @@ import FaqAccordion from "./FaqAccordion";
 
 const Faq = () => (
   <div className="faq">
-        <FaqAccordion>
-        </FaqAccordion>
-      </div>
+    <FaqAccordion>
+    </FaqAccordion>
+  </div>
 )
 
 export default Faq

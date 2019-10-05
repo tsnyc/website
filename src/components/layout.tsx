@@ -5,11 +5,11 @@ import HomeNav from "./HomeNav";
 
 const Layout = () => (
   <div className="app">
-        <Header />
-        {/* the props sent to HomeNav will come from meetup api */}
-        <HomeNav />
-        <Footer />
-      </div>
+    <Header />
+    {/* the props sent to HomeNav will come from meetup api */}
+    <HomeNav />
+    <Footer />
+  </div>
 )
 
 export default Layout;

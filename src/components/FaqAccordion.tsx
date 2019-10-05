@@ -3,8 +3,8 @@ import React from "react";
 
 const FaqAccordion = () => (
   <div className="faq-accordion">
-        <h1>I am Faq Accordion</h1>
-      </div>
+    <h1>I am Faq Accordion</h1>
+  </div>
 )
 
 export default FaqAccordion;

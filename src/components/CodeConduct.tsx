@@ -3,8 +3,8 @@ import React from "react";
 
 const CodeConduct = () => (
   <div className="code-conduct">
-  <h1>I am a CodeConduct</h1>
-</div>
+    <h1>I am a CodeConduct</h1>
+  </div>
 )
 
 export default CodeConduct;
