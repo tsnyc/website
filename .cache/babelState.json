@@ -2,14 +2,7 @@
   "stages": {
     "develop": {
       "plugins": [],
-      "presets": [
-        {
-          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -17,14 +10,7 @@
     },
     "develop-html": {
       "plugins": [],
-      "presets": [
-        {
-          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -32,14 +18,7 @@
     },
     "build-html": {
       "plugins": [],
-      "presets": [
-        {
-          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -47,14 +26,7 @@
     },
     "build-javascript": {
       "plugins": [],
-      "presets": [
-        {
-          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
-          "options": {
-            "plugins": []
-          }
-        }
-      ],
+      "presets": [],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"

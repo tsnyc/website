@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import HomeNav from "./HomeNav";
+import layout from "../styles/layout.css";
 
 export default function Layout() {
   const state = useState("");
@@ -9,7 +10,7 @@ export default function Layout() {
   const setText = state[1];
 
   return (
-  <div className="app">
+  <div className="layout">
     <Header />
     {/* the props sent to HomeNav will come from meetup api */}
     <HomeNav />

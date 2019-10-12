@@ -6,8 +6,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-tslint`,
+    // `gatsby-plugin-typescript`,
+    // `gatsby-plugin-tslint`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
