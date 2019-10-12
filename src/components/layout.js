@@ -5,16 +5,11 @@ import HomeNav from "./HomeNav";
 import layout from "../styles/layout.css";
 
 export default function Layout() {
-  const state = useState("");
-  const text = state[0];
-  const setText = state[1];
-
   return (
   <div className="layout">
     <Header />
     {/* the props sent to HomeNav will come from meetup api */}
     <HomeNav />
-      <input  type="text" value = {text} onChange={e => setText(e.target.value)}/>
     <Footer />
   </div>
   )
