@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/styled-components": "^4.1.19",
     "gatsby": "^2.13.31",
     "gatsby-cli": "^2.7.21",
     "gatsby-image": "^2.2.6",
@@ -12,22 +13,24 @@
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.8",
+    "gatsby-plugin-tslint": "0.0.2",
+    "gatsby-plugin-typescript": "^2.1.11",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
-    "gatsby-plugin-typescript": "^2.1.11",
-    "gatsby-plugin-tslint": "0.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "typescript": "^3.6.3",
+    "styled-components": "^4.4.0",
     "tslint": "^5.20.0",
-    "tslint-react": "^4.1.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
     "tslint-plugin-prettier": "^2.0.1",
-    "tslint-config-prettier": "^1.18.0"
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.6.3"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "prettier": "^1.18.2"
   },
   "keywords": [
