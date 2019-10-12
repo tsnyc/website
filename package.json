@@ -18,19 +18,18 @@
     "gatsby-plugin-typescript": "^2.1.11",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
-    "lint": "tslint --project .",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.4.0",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.1.0",
+    "typescript": "^3.6.3",
     "type-check": "tsc --noEmit",
-    "typescript": "^3.6.3"
+    "lint": "tslint --project ."
   },
   "devDependencies": {
     "prettier": "^1.18.2"
