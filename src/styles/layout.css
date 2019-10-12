@@ -2,3 +2,13 @@
     display:flex;
     flex-direction:column;
 }
+
+.header {
+    border: 2px solid red;
+}
+.footer {
+    border: 2px solid blue;
+}
+.home-nav {
+    border: 2px solid green;
+}
