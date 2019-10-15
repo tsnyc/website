@@ -9,7 +9,6 @@ display: flex;
 flex-direction: column;
 `;
 
-
 export default function Layout() {
   return (
   <LayoutFlex>
