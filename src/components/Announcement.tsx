@@ -14,10 +14,13 @@ export default function Announcement() {
     <StickerStyle>
         <div className="sticker-container">
             <div className="sticker-content">
-                <p>Next Event: <br></br>Next Event</p>
-                <p>Next Event</p>
+                <p>Next Event: <br></br>Date</p>
+                <p>Location</p>
             </div>
         </div>
     </StickerStyle>
   )
 }
+
+// next event title, date, location from meetup api
+// next event title links to rsvp
