@@ -1,17 +1,20 @@
 import { Link } from "gatsby";
+import logo from '../images/ts-nyc-logo.png';
 import React from "react";
 import styled, { createGlobalStyle, css } from 'styled-components';
 
-export const BorderDiv = styled.div`
-border: 1px solid red;
+export const HeaderStyle = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 `;
 
 export default function Header() {
   return (
-    <BorderDiv>
-      <Link to="/">
-        <h1>header</h1>
-      </Link>
-    </BorderDiv>
+    <HeaderStyle>
+        <div className="logo-container">
+          <img src={logo} width="300"/>
+        </div>
+    </HeaderStyle>
   )
 }

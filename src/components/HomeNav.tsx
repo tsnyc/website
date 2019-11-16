@@ -12,6 +12,24 @@ export default function HomeNav() {
     <Link to="/">
       <h1>Nav Items from props aka meetup API</h1>
     </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
+    <Link to="/">
+      <h1>Nav Items from props aka meetup API</h1>
+    </Link>
   </BorderDiv>
   )
 }

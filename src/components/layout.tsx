@@ -1,22 +1,26 @@
-import React, { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import HomeNav from "./HomeNav";
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
+import Header from "./Header";
+import Announcement from "./Announcement";
+import HomeNav from "./HomeNav";
+import Footer from "./Footer";
 
-export const LayoutFlex = styled.div`
-display: flex;
-flex-direction: column;
-`;
+
+export const LayoutStyle = styled.div`
+    border: 1px solid red;
+    width: 100%;
+    position: relative;
+    `;
+
 
 export default function Layout() {
-  return (
-  <LayoutFlex>
-    <Header />
-    {/* the props sent to HomeNav will come from meetup api */}
-    <HomeNav />
-    <Footer />
-  </LayoutFlex>
+return (
+    <LayoutStyle>
+        <Header />
+        <Announcement />
+        <HomeNav />
+        <Footer />
+      </LayoutStyle>
   )
 }
 
