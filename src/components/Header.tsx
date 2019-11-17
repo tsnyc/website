@@ -12,9 +12,11 @@ align-items: center;
 export default function Header() {
   return (
     <HeaderStyle>
-        <div className="logo-container">
+      <Link to="/">
+      <div className="logo-container">
           <img src={logo} width="300"/>
         </div>
+      </Link>
     </HeaderStyle>
   )
 }

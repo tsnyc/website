@@ -75,12 +75,26 @@ const navLinks = [
   },
 ]
 
-export const BorderDiv = styled.div`
-// border: 1px solid green;
+export const NavFlexContainer = styled.div`
+border: 3px solid green;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+width:100%;
+`;
+
+export const NavItemsContainer = styled.div`
+// border: 3px solid green;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:100%;
+@media (min-width: 576px) {
+  width:30%;
+  max-width:300px;
+}
 `;
 
 export const LeftColumn = styled.div`
@@ -110,7 +124,7 @@ align-items: center;
 width:100%
 `;
 
-const makeNavLink = (navLinks) => {
+const makeNavLinks = (navLinks) => {
   if (navLinks.length > 0) {
     return navLinks.map((item) => {
       const itemContents = Object.values(item)[0];
@@ -125,25 +139,30 @@ const makeNavLink = (navLinks) => {
         </RightColumn>
       </NavItem>
     })
-  }
+  } 
 }
 
 const fillRightColumn = (link, description) => {
-  if (link.length > 0 && link[0] === '/') {
+  let firstUrlChar = link[0];
+
+  if (link.length > 0 && firstUrlChar === '/') {
     return <Link to={`${link}`}>
       <p>{`${description}`}</p>
     </Link>
-  } else if (link.length > 0 && link[0] !== '/') {
+  } else if (link.length > 0 && firstUrlChar !== '/') {
     return <a href={`${link}`} target="_blank"><p>{`${description}`}</p></a>
   } else if (link.length === 0) {
     return <p>{`${description}`}</p>
-  }
+  } 
 }
 
 export default function HomeNav() {
   return (
-    <BorderDiv>
-      {makeNavLink(navLinks)}
-    </BorderDiv>
+    <NavFlexContainer>
+      <NavItemsContainer>
+      {makeNavLinks(navLinks)}
+      </NavItemsContainer>
+      
+    </NavFlexContainer>
   )
 }
