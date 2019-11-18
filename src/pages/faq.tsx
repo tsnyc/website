@@ -1,7 +1,7 @@
-import FaqAccordion from "../components/FaqAccordion";
-import Layout from "../components/layout";
 import React from "react";
 import styled from 'styled-components'
+import FaqAccordion from "../components/FaqAccordion";
+import Layout from "../components/layout";
 
 export const PageContainer = styled.div`
     border: 1px solid red;

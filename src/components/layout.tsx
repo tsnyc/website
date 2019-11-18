@@ -19,7 +19,6 @@ export default function Layout(props) {
 return (
     <LayoutContainer>
         <Header />
-        <Announcement />
         {propsComponent}
         <Footer />
       </LayoutContainer>
