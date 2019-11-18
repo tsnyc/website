@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import Header from "./Header";
-import Announcement from "./Announcement";
-// import HomeNav from "./HomeNav";
 import Footer from "./Footer";
 
 export const LayoutContainer = styled.div`
@@ -13,13 +11,13 @@ export const LayoutContainer = styled.div`
     `;
 
 export default function Layout(props) {
-    let propsKey = Object.keys(props)[0];
-    let propsComponent = props[propsKey];
+    let ComponentKey = Object.keys(props)[0];
+    let Component = props[ComponentKey];
 
 return (
     <LayoutContainer>
         <Header />
-        {propsComponent}
+        {Component}
         <Footer />
       </LayoutContainer>
   )

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import FaqAccordion from "../components/FaqAccordion";
+import AccordionItem from "../components/AccordionItem";
 import Layout from "../components/layout";
 
 export const PageContainer = styled.div`
@@ -13,15 +13,34 @@ export const PageContainer = styled.div`
     align-items: center;
     `;
 
-    const title = "frank"
-    const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    export const AccordionContainer = styled.div`
+    width:100%;
+    border: 2px solid black;
+`;
 
-    const sendAccordion = <FaqAccordion title={title} content={content}/>
+    const accordionItems = [
+        {1: {
+            title: 'what is the meaning of life?',
+            description: '42'
+          }
+        },
+        {2: {
+                title: 'what is foo?',
+                description: 'bar'
+              }
+        } 
+      ]
+
+    const makeAccordionContainer = (accordionItems) => {
+        return <AccordionContainer>
+            {accordionItems.map(item => (<AccordionItem item={item} />))}
+        </AccordionContainer>
+    }
     
 export default function faqPage() {
     return (
     <PageContainer>
-        <Layout faqAccordion={sendAccordion}/>
+        <Layout accordionContainer={makeAccordionContainer(accordionItems)}/>
     </PageContainer>
     )
 }

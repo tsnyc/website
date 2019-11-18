@@ -149,8 +149,12 @@ const fillRightColumn = (link, description) => {
     return <Link to={`${link}`}>
       <p>{`${description}`}</p>
     </Link>
+
   } else if (link.length > 0 && firstUrlChar !== '/') {
-    return <a href={`${link}`} target="_blank"><p>{`${description}`}</p></a>
+    return <a href={`${link}`} target="_blank">
+      <p>{`${description}`}</p>
+      </a>
+
   } else if (link.length === 0) {
     return <p>{`${description}`}</p>
   } 
