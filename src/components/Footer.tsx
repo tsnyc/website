@@ -13,8 +13,7 @@ export const FooterContent = styled.div`
 border: 1px solid blue;
 width: 100%;
 @media (min-width: 576px) {
-  width:100%;
-  max-width:300px;
+  max-width:400px;
 }
 `;
 

@@ -13,12 +13,10 @@ export const PageContainer = styled.div`
     align-items: center;
     `;
 
-    const sendHomeNav = <HomeNav/>
-
 export default function IndexPage() {
     return (
         <PageContainer>
-            <Layout homeNav={sendHomeNav}></Layout>
+            <Layout homeNav={<HomeNav/>}></Layout>
         </PageContainer>
     )
 }

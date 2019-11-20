@@ -8,6 +8,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%
+@media (min-width: 576px) {
+  max-width:400px;
+}
 `;
 
 export default function Announcement() {
