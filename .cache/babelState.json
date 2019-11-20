@@ -1,7 +1,12 @@
 {
   "stages": {
     "develop": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/frank.mcmanus/Documents/_development/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
@@ -16,7 +21,12 @@
       }
     },
     "develop-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/frank.mcmanus/Documents/_development/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
@@ -31,7 +41,12 @@
       }
     },
     "build-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/frank.mcmanus/Documents/_development/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
@@ -46,7 +61,12 @@
       }
     },
     "build-javascript": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        }
+      ],
       "presets": [
         {
           "name": "/Users/frank.mcmanus/Documents/_development/Typescript/website/node_modules/@babel/preset-typescript/lib/index.js",
