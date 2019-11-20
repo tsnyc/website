@@ -11,7 +11,6 @@ exports.components = {
   "component---src-pages-meetup-1-tsx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup1.tsx" /* webpackChunkName: "component---src-pages-meetup-1-tsx" */),
   "component---src-pages-meetup-2-tsx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup2.tsx" /* webpackChunkName: "component---src-pages-meetup-2-tsx" */),
   "component---src-pages-meetup-3-tsx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup3.tsx" /* webpackChunkName: "component---src-pages-meetup-3-tsx" */),
-  "component---src-pages-past-meetups-tsx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/past-meetups.tsx" /* webpackChunkName: "component---src-pages-past-meetups-tsx" */),
-  "component---src-pages-test-mdx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/test.mdx" /* webpackChunkName: "component---src-pages-test-mdx" */)
+  "component---src-pages-past-meetups-tsx": () => import("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/past-meetups.tsx" /* webpackChunkName: "component---src-pages-past-meetups-tsx" */)
 }
 
