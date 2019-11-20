@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.1",
     "@types/styled-components": "^4.1.19",
     "gatsby": "^2.13.31",
     "gatsby-cli": "^2.7.21",
