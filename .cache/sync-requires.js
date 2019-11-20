@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-meetup-1-tsx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup1.tsx"))),
   "component---src-pages-meetup-2-tsx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup2.tsx"))),
   "component---src-pages-meetup-3-tsx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/meetup3.tsx"))),
-  "component---src-pages-past-meetups-tsx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/past-meetups.tsx")))
+  "component---src-pages-past-meetups-tsx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/past-meetups.tsx"))),
+  "component---src-pages-test-mdx": hot(preferDefault(require("/Users/frank.mcmanus/Documents/_development/Typescript/website/src/pages/test.mdx")))
 }
 
