@@ -1,10 +1,32 @@
 import React from "react";
 // import { Link } from "gatsby";
+// import styled from 'styled-components'
+
+var iframeStyle = {
+  height: '900px',
+  width: '100%'
+};
 
 export default function CodeConduct() {
   return (
     <div className="code-conduct">
-      <h1>I am a CodeConduct</h1>
+      <p>All Typescript NYC attendees, sponsors, speakers, volunteers and staff are required to follow the JSConf Code of Conduct. We take our Code of Conduct very seriously and it will be enforced by organizers during the entirety of all Typescript NYC events.</p>
+      <iframe src="http://jsconf.com/codeofconduct.html" style={iframeStyle}></iframe>
+      <p>If you need help for any reason please notify us through the following channels:</p>
+      <ul>
+        <li>Slack</li>
+        <li>Discord</li>
+        <li>Email</li>
+        <li>Twitter</li>
+        <li>Find an event staff member</li>
+        <ul>
+            <li>OrganizerCard 1</li>
+            <li>OrganizerCard 2</li>
+            <li>OrganizerCard 3</li>
+            <li>OrganizerCard 4</li>
+        </ul>
+      </ul>
+      <p>We monitor these channels frequently and give our prompt attention to each notification.</p>
     </div>
   )
 }
