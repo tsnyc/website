@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from 'styled-components'
+// import { graphql } from "gatsby"
 
 const navLinks = [
   {
@@ -160,7 +161,8 @@ const fillRightColumn = (link, description) => {
   } 
 }
 
-export default function HomeNav() {
+export default function HomeNav(props) {
+  console.log(props)
   return (
     <NavFlexContainer>
       <NavItemsContainer>
@@ -170,3 +172,4 @@ export default function HomeNav() {
     </NavFlexContainer>
   )
 }
+
