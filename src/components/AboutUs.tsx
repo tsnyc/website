@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from 'styled-components'
-import Card from './Card'
+import CardList from './CardList'
 
 export const AboutContainer = styled.div`
 @media (min-width: 576px) {
@@ -9,59 +9,44 @@ export const AboutContainer = styled.div`
 }
 `;
 
-export const OrganizerList = styled.ul`
-list-style: none;
-margin: 0;
-padding: 0;
-`;
+
 
 const organizers = [
   {
-    name: "1",
-    title: "title",
-    occupation: "occupation",
-    summary: "summary",
+    title: "Orta Therox",
+    subtitle: "Organizer",
+    summary: "Engineer on TypeScript",
     twitterHandle: "@handle",
     twitterUrl: "",
-    photoUrl: ""
+    imageUrl: ""
   },
   {
-    name: "2",
-    title: "title",
-    occupation: "occupation",
-    summary: "summary",
+    title: "Jason Killian",
+    subtitle: "Co-Organizer",
+    summary: "Frontend-focused SWE at Palantir. TypeScript and React are my two most used tools. I've also helped maintain some open source TypeScript projects such as TSLint.",
     twitterHandle: "@handle",
     twitterUrl: "",
-    photoUrl: ""
+    imageUrl: ""
   },
   {
-    name: "3",
-    title: "title",
-    occupation: "occupation",
-    summary: "summary",
+    title: "Dan Vanderkam",
+    subtitle: "Co-Organizer",
+    summary: "SWE at Sidewalk Labs. Fan of static types and React.",
     twitterHandle: "@handle",
     twitterUrl: "",
-    photoUrl: ""
+    imageUrl: ""
   },
   {
-    name: "4",
-    title: "title",
-    occupation: "occupation",
-    summary: "summary",
+    title: "Kirill Cherkashin",
+    subtitle: "Co-organizer",
+    summary: "",
     twitterHandle: "@handle",
     twitterUrl: "",
-    photoUrl: ""
+    imageUrl: ""
   }
 ]
 
-const listOrganizers = (organizers) => {
-  return organizers.map((organizer) => {
-    let { name, title, occupation, summary } = organizer;
-    return <li>
-      <Card organizer={organizer}/>
-    </li>
-  })
-}
+
 
 export default function AboutUs() {
   return (
@@ -72,11 +57,9 @@ export default function AboutUs() {
       <p>Come join us to learn about TypeScript, improve your understanding of the language, or share what you've learned. All levels of skill and experience with TypeScript are welcome.</p>
       <p>Chat with us in the #ts-nyc channel of the <a href="https://discord.gg/ZjvtBsh" target="_blank">TypeScript Community Discord</a> (https://discord.gg/ZjvtBsh).</p>
       <p>Code of conduct: We follow the JSConf <Link to="/code-of-conduct">code of conduct.</Link></p>
-      <div className="oranizer-container">
+      <div className="organizer-container">
         <h3>Organizers</h3>
-        <OrganizerList>
-          {listOrganizers(organizers)}
-        </OrganizerList>
+        <CardList organizers={organizers}/>
       </div>
     </AboutContainer>
   )

@@ -3,33 +3,77 @@ import { Link } from "gatsby";
 import styled from 'styled-components'
 
 
+
 export const FlexCard = styled.div`
 display:flex;
+flex-direction: column;
 align-items:center;
 justify-content:space-around;
+width:100%;
+@media (min-width: 576px) {
+  flex-direction: row;
+}
+`;
+export const AvatarContainer = styled.div`
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content:space-around;
+width:100%;
+@media (min-width: 576px) {
+  flex-direction: row;
+  width:25%;
+}
 `;
 
+export const Info = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+@media (min-width: 576px) {
+  width:75%;
+  align-items:flex-start;
+}
+`;
+
+export const Avatar = styled.div`
+background-image: url(${props => props.img || "http://i.stack.imgur.com/Dj7eP.jpg"};);
+width: 100px;
+height: 100px;
+background-size: cover;
+background-position: top center;
+border-radius: 50%;
+`;
+
+const accessPropsContent = (props) => {
+  let propsContent = props[Object.keys(props)[0]];
+ return propsContent;
+};
 
 export default function Card(props) {
-  console.log(props)
+  let {title, subtitle, summary, twitterHandle, imageUrl} = accessPropsContent(props);
+
   return (
     <FlexCard>
-           <div className="avatar">photo</div>
-        <div className="info">
+      <AvatarContainer>
+      <Avatar img={imageUrl}></Avatar>
+      </AvatarContainer>
+           
+        <Info>
           <div className="title">
-            <p>{props.organizer.name}</p>
+            <p>{title}</p>
+          </div>
+          <div className="title">
+            <p>{twitterHandle}</p>
           </div>
           <div className="subtitle">
-            <p>{props.organizer.title}</p>
-          </div>
-          <div className="caption">
-            <p>{props.organizer.occupation}</p>
+            <p>{subtitle}</p>
           </div>
           <div className="summary">
-            <p>{props.organizer.summary}</p>
+            <p>{summary}</p>
           </div>
-        </div>
-        <div className="twitter-icon">tweet</div>
+          </Info>
     </FlexCard>
   )
 }
