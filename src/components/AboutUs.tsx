@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from 'styled-components'
+import Card from './Card'
 
 export const AboutContainer = styled.div`
 @media (min-width: 576px) {
   margin: 2%
 }
 `;
-export const OrganizerCard = styled.div`
-display:flex;
-align-items:center;
-justify-content:space-around;
-`;
+
 export const OrganizerList = styled.ul`
 list-style: none;
 margin: 0;
@@ -60,26 +57,8 @@ const organizers = [
 const listOrganizers = (organizers) => {
   return organizers.map((organizer) => {
     let { name, title, occupation, summary } = organizer;
-    console.log(name, title)
     return <li>
-      <OrganizerCard>
-        <div className="organizer-photo">photo</div>
-        <div className="organizer-copy">
-          <div className="name">
-            <p>{name}</p>
-          </div>
-          <div className="title">
-            <p>{title}</p>
-          </div>
-          <div className="occupation">
-            <p>{occupation}</p>
-          </div>
-          <div className="summary">
-            <p>{summary}</p>
-          </div>
-        </div>
-        <div className="twitter-icon">tweet</div>
-      </OrganizerCard>
+      <Card organizer={organizer}/>
     </li>
   })
 }

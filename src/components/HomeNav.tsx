@@ -161,8 +161,8 @@ const fillRightColumn = (link, description) => {
   } 
 }
 
-export default function HomeNav(props) {
-  console.log(props)
+export default function HomeNav() {
+
   return (
     <NavFlexContainer>
       <NavItemsContainer>
