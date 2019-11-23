@@ -12,6 +12,7 @@ width:100%;
   flex-direction: row;
 }
 `;
+
 export const AvatarContainer = styled.div`
 display:flex;
 flex-direction: column;
@@ -52,7 +53,6 @@ export default function Card(props) {
       <AvatarContainer>
       <Avatar img={imageUrl}></Avatar>
       </AvatarContainer>
-           
         <Info>
           <div className="title">
             <p>{title}</p>

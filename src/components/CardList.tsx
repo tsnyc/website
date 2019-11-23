@@ -8,13 +8,7 @@ margin: 0;
 padding: 0;
 `;
 
-const makeList = (list) => {
-    return list.map((item) => {
-      return <li>
-        <Card item={item}/>
-      </li>
-    })
-  }
+const makeList = list => list.map(item => <li><Card item={item}/></li>);
 
 export default function CardList(props) {
   let list = props[Object.keys(props)[0]];

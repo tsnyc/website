@@ -2,7 +2,6 @@ import React from "react";
 import CardList from './CardList';
 import organizers from '../data/organizers.js';
 
-
 var iframeStyle = {
   height: '500px',
   width: '100%'
