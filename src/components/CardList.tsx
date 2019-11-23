@@ -8,8 +8,8 @@ margin: 0;
 padding: 0;
 `;
 
-const makeList = (array) => {
-    return array.map((item) => {
+const makeList = (list) => {
+    return list.map((item) => {
       return <li>
         <Card item={item}/>
       </li>
@@ -17,9 +17,11 @@ const makeList = (array) => {
   }
 
 export default function CardList(props) {
+  let list = props[Object.keys(props)[0]];
+ 
   return (
     <Ul>
-        {makeList(props.organizers)}
+        {makeList(list)}
     </Ul>
   )
 }

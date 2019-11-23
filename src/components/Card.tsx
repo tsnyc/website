@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from 'styled-components'
 
-
-
 export const FlexCard = styled.div`
 display:flex;
 flex-direction: column;
@@ -46,13 +44,8 @@ background-position: top center;
 border-radius: 50%;
 `;
 
-const accessPropsContent = (props) => {
-  let propsContent = props[Object.keys(props)[0]];
- return propsContent;
-};
-
 export default function Card(props) {
-  let {title, subtitle, summary, twitterHandle, imageUrl} = accessPropsContent(props);
+  let {title, subtitle, summary, twitterHandle, imageUrl} = props.item;
 
   return (
     <FlexCard>

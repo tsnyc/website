@@ -1,9 +1,10 @@
 import React from "react";
-// import { Link } from "gatsby";
-// import styled from 'styled-components'
+import CardList from './CardList';
+import organizers from '../data/organizers.js';
+
 
 var iframeStyle = {
-  height: '900px',
+  height: '500px',
   width: '100%'
 };
 
@@ -19,12 +20,7 @@ export default function CodeConduct() {
         <li>Email</li>
         <li>Twitter</li>
         <li>Find an event staff member</li>
-        <ul>
-            <li>OrganizerCard 1</li>
-            <li>OrganizerCard 2</li>
-            <li>OrganizerCard 3</li>
-            <li>OrganizerCard 4</li>
-        </ul>
+        <CardList organizers={organizers.list}/>
       </ul>
       <p>We monitor these channels frequently and give our prompt attention to each notification.</p>
     </div>

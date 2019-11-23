@@ -1,52 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from 'styled-components'
-import CardList from './CardList'
+import styled from 'styled-components';
+import CardList from './CardList';
+import organizers from '../data/organizers.js';
 
 export const AboutContainer = styled.div`
 @media (min-width: 576px) {
   margin: 2%
 }
 `;
-
-
-
-const organizers = [
-  {
-    title: "Orta Therox",
-    subtitle: "Organizer",
-    summary: "Engineer on TypeScript",
-    twitterHandle: "@handle",
-    twitterUrl: "",
-    imageUrl: ""
-  },
-  {
-    title: "Jason Killian",
-    subtitle: "Co-Organizer",
-    summary: "Frontend-focused SWE at Palantir. TypeScript and React are my two most used tools. I've also helped maintain some open source TypeScript projects such as TSLint.",
-    twitterHandle: "@handle",
-    twitterUrl: "",
-    imageUrl: ""
-  },
-  {
-    title: "Dan Vanderkam",
-    subtitle: "Co-Organizer",
-    summary: "SWE at Sidewalk Labs. Fan of static types and React.",
-    twitterHandle: "@handle",
-    twitterUrl: "",
-    imageUrl: ""
-  },
-  {
-    title: "Kirill Cherkashin",
-    subtitle: "Co-organizer",
-    summary: "",
-    twitterHandle: "@handle",
-    twitterUrl: "",
-    imageUrl: ""
-  }
-]
-
-
 
 export default function AboutUs() {
   return (
@@ -59,7 +21,7 @@ export default function AboutUs() {
       <p>Code of conduct: We follow the JSConf <Link to="/code-of-conduct">code of conduct.</Link></p>
       <div className="organizer-container">
         <h3>Organizers</h3>
-        <CardList organizers={organizers}/>
+        <CardList organizers={organizers.list}/>
       </div>
     </AboutContainer>
   )
