@@ -1,80 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from 'styled-components'
-// import { graphql } from "gatsby"
-
-const navLinks = [
-  {
-    rsvp: {
-      link: 'https://www.meetup.com/TypeScriptNYC/events/251309133/',
-      description: 'RSVP to our next event',
-      time: 'now'
-    }
-  },
-  {
-    codeOfConduct: {
-      link: '/code-of-conduct',
-      description: 'Read our code of conduct',
-      time: ''
-    }
-  },
-  {
-    slack: {
-      link: 'https://slack.com/signin',
-      description: 'Join our slack',
-      time: ''
-    }
-  },
-  {
-    venueInstructions: {
-      link: 'google.com',
-      description: 'Go to the venue and check in',
-      time: 'in 5 days'
-    }
-  },
-  {
-    speakers: {
-      link: 'google.com',
-      description: 'speaker stuff here',
-      time: '7PM'
-    }
-  },
-  {
-    end: {
-      link: '',
-      description: 'Social hour',
-      time: '9PM'
-    }
-  },
-  {
-    speak: {
-      link: 'mailto:thefrankharvey@gmail.com',
-      description: 'Be a future speaker',
-      time: ''
-    }
-  },
-  {
-    pastMeetups: {
-      link: '/past-meetups',
-      description: 'See past meetups',
-      time: ''
-    }
-  },
-  {
-    aboutUs: {
-      link: '/about',
-      description: 'Learn more about us',
-      time: ''
-    }
-  },
-  {
-    becomeASponsor: {
-      link: '/faq',
-      description: 'Become a sponsor',
-      time: ''
-    }
-  },
-]
+import navItems from '../data/nav-items.js';
 
 export const NavFlexContainer = styled.div`
 border: 3px solid green;
@@ -85,15 +12,15 @@ align-items: center;
 width:100%;
 `;
 
-export const NavItemsContainer = styled.div`
-// border: 3px solid green;
+export const NavItemRowsContainer = styled.div`
+border: 3px solid green;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 width:100%;
 @media (min-width: 576px) {
-  width:30%;
+  width:50%;
   max-width:300px;
 }
 `;
@@ -116,7 +43,7 @@ align-items: flex-start;
 width:80%
 `;
 
-export const NavItem = styled.div`
+export const NavItemRow = styled.div`
 // border: 1px solid green;
 display: flex;
 flex-direction: row;
@@ -125,20 +52,20 @@ align-items: center;
 width:100%
 `;
 
-const makeNavLinks = (navLinks) => {
-  if (navLinks.length > 0) {
-    return navLinks.map((item) => {
+const makeNavLinks = (navItems) => {
+  if (navItems.length > 0) {
+    return navItems.map((item) => {
       const itemContents = Object.values(item)[0];
       let { link, description, time } = itemContents;
 
-      return <NavItem>
+      return <NavItemRow>
         <LeftColumn>
           <p>{`${time}`}</p>
         </LeftColumn>
         <RightColumn>
           {fillRightColumn(link, description)}
         </RightColumn>
-      </NavItem>
+      </NavItemRow>
     })
   } 
 }
@@ -162,12 +89,12 @@ const fillRightColumn = (link, description) => {
 }
 
 export default function HomeNav() {
-
+  console.log(navItems.list)
   return (
     <NavFlexContainer>
-      <NavItemsContainer>
-      {makeNavLinks(navLinks)}
-      </NavItemsContainer>
+      <NavItemRowsContainer>
+      {makeNavLinks(navItems.list)}
+      </NavItemRowsContainer>
       
     </NavFlexContainer>
   )

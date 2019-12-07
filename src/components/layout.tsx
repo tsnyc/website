@@ -4,7 +4,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 export const LayoutContainer = styled.div`
-    border: 1px solid red;
     width: 100%;
     position: relative;
     max-width: 600px;

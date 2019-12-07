@@ -5,7 +5,6 @@ import HomeNav from "../components/HomeNav";
 // import { graphql } from "gatsby";
 
 export const PageContainer = styled.div`
-    border: 1px solid red;
     width: 100%;
     position: relative;
     display:flex;

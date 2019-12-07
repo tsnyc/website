@@ -2,7 +2,7 @@ import React from "react";
 import styled, { createGlobalStyle, css } from 'styled-components';
 
 export const StickerStyle = styled.div`
-border: 1px solid red;
+border: 1px solid black;
 display: flex;
 flex-direction: column;
 justify-content: center;
