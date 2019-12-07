@@ -1,4 +1,13 @@
 {
+  "rulesDirectory": ["tslint-pluign-prettier"],
+  "extneds": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "prettier": true,
+    "jsx-mo-multiline-js": false,
+    "jsx-no-lambda": false,
+    "import-name": false,
+    "no-boolean-literal-compare": false
+  },
   "compilerOptions": {
     /* Basic Options */
     // "incremental": true,                   /* Enable incremental compilation */

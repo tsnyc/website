@@ -5,6 +5,18 @@
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
           "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
         }
       ],
       "presets": [
@@ -24,6 +36,18 @@
       "plugins": [
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
@@ -45,6 +69,18 @@
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
           "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
         }
       ],
       "presets": [
@@ -64,6 +100,18 @@
       "plugins": [
         {
           "name": "@babel/plugin-proposal-object-rest-spread",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/frankmcmanus/Documents/_dev/Typescript/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
